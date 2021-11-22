@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3703293153246639209}
   - component: {fileID: 3703293153246639208}
   - component: {fileID: 3703293153246639223}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3703293153246639212}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 141.21, y: -9.867, z: 0}
   m_LocalScale: {x: 1, y: 0.9, z: 1}
   m_Children: []
@@ -97,8 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a1403571005fd46bdd435b96f3e218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementSpeed: 2.5
-  JumpForce: 7.5
+  MovementSpeed: 6.5
+  JumpForce: 6.8
 --- !u!50 &3703293153246639208
 Rigidbody2D:
   serializedVersion: 4
