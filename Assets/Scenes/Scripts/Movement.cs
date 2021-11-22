@@ -18,8 +18,9 @@ public class Movement : MonoBehaviour
     {
         if (contro == true)
         {
-            var movement = Input.GetAxis("Horizontal");
-            transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
+            //var movement = Input.GetAxis("Horizontal");
+
+            transform.position += new Vector3(1, 0, 0) * Time.deltaTime * MovementSpeed;
 
             if (Input.GetMouseButtonDown(0) && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
             {
