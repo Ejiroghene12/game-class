@@ -10,6 +10,7 @@ public class FallWord : MonoBehaviour
 
     private float startPosX;
     private float startPosY;
+    public Movement Player;
 
     private Vector3 resetPosition;
 
@@ -34,8 +35,9 @@ public class FallWord : MonoBehaviour
 
     }
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
+        Player.contro = false;
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 mousepos;
@@ -49,8 +51,9 @@ public class FallWord : MonoBehaviour
         }
     }
 
-    private void OnMouseUp()
+    public void OnMouseUp()
     {
+//        Player.contro = true;
         moving = false;
 
         if (Mathf.Abs(this.transform.localPosition.x - correctForm.transform.localPosition.x) <= 0.5f &&
