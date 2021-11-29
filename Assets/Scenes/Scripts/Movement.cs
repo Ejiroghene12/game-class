@@ -22,7 +22,7 @@ public class Movement : MonoBehaviour
 
             transform.position += new Vector3(1, 0, 0) * Time.deltaTime * MovementSpeed;
 
-            if (Input.GetMouseButtonDown(0) && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
+            if (Input.GetMouseButtonDown(0) && Mathf.Abs(_rigidbody.velocity.y) < 0.001f && contro)
             {
                 _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
             }

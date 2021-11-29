@@ -22,24 +22,24 @@ public class loadloader : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         GameObject collisionGameObject = collision.gameObject;
-
-        if(collisionGameObject.name == "Player")
+        Debug.Log(collisionGameObject.tag);
+        if(collisionGameObject.tag == "Player")
         {
             LoadScene();
         }
 
-        void LoadScene()
+    }       
+    private void LoadScene()
+    {
+        if (useIntegerToloadLevel)
         {
-            if (useIntegerToloadLevel)
-            {
-                SceneManager.LoadScene(ILevelToLoad);
-            }
-            else
-            {
-                SceneManager.LoadScene(sLevelToLoad);
-            }
-
+            SceneManager.LoadScene(ILevelToLoad);
+        }
+        else
+        {
+            SceneManager.LoadScene(sLevelToLoad);
         }
 
     }

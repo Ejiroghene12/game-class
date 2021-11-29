@@ -5,8 +5,8 @@ using UnityEngine;
 public class FallWord : MonoBehaviour
 {
     public GameObject correctForm;
-    private bool moving;
-    private bool Finish;
+    public bool moving;
+    public bool Finish;
 
     private float startPosX;
     private float startPosY;

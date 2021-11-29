@@ -28,6 +28,7 @@ public class EnemyScript : MonoBehaviour
             camera.GetComponent<FollowPlayer>().gameObjectFollowedByCamera = newplayer; //set object to follow on camera
             newplayer.GetComponent<BoxCollider2D>().enabled = true;
             newplayer.GetComponent<Movement>().enabled = true;
+            
             print("Killed");
         }
     }

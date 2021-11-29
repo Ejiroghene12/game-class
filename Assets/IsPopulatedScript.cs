@@ -5,6 +5,7 @@ using UnityEngine;
 public class IsPopulatedScript : MonoBehaviour
 {
     public bool isPopulated;
+    public FallWord fallWord;
     
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,7 @@ public class IsPopulatedScript : MonoBehaviour
     }
     public void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Letter")
+        if (collision.gameObject.tag == "Letter" && fallWord.moving == false)
         {
             isPopulated = true;
         }
